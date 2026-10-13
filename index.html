@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Go Go Google Dorker</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div class="container">
+        <header>
+            <div class="logo">⚡</div>
+            <div>
+                <h1>GO GO GOOGLE DORKER</h1>
+                <p>Ranger-themed OSINT dashboard for fast, focused Google dorks.</p>
+            </div>
+        </header>
+
+        <section class="domain-section">
+            <label>TARGET DOMAIN</label>
+            <p class="subtitle">Used to substitute example.com in dorks.</p>
+            <input type="text" id="targetDomain" value="Vulnerable_Website.com" placeholder="example.com">
+        </section>
+
+        <main>
+            <section class="categories-panel">
+                <h2>DORK CATEGORIES</h2>
+                <div class="grid" id="categoryGrid">
+                    <!-- Los botones se generan desde main.js -->
+                </div>
+            </section>
+
+            <section class="results-panel">
+                <h2 id="resultsTitle">ADMIN PANELS</h2>
+                <p class="subtitle">Dorks will appear here with domain substitution and copy buttons.</p>
+                <div id="dorksList">
+                    <!-- Los dorks se generan aquí -->
+                </div>
+            </section>
+        </main>
+    </div>
+    <script src="main.js"></script>
+</body>
+</html>
